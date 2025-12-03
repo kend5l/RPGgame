@@ -2,8 +2,13 @@
 #include <iostream>
 using namespace sf;
 
-void Enemy::Draw()
+Enemy::Enemy() : sprite(texture)
 {
+}
+
+void Enemy::Draw(RenderWindow& window)
+{
+    window.draw(sprite);
 }
 
 void Enemy::Load()
@@ -20,6 +25,4 @@ void Enemy::Update()
 {
 }
 
-void Enemy::Initialize()
-{
-}
+

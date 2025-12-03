@@ -9,9 +9,8 @@ private:
 public:
 
 	sf::Sprite sprite;
-
-	void Draw(); // called every frame
+	Enemy();
+	void Draw(sf::RenderWindow& window); // called every frame
 	void Load(); // called on app start
 	void Update(); // called every frame
-	void Initialize(); // called on app start
 };
